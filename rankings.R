@@ -37,7 +37,7 @@ build_rankings <- function(ppl) {
     this <- 
       tibble(
         proposer = p,
-        propsee = ppl[-which(ppl == p)],
+        proposee = ppl[-which(ppl == p)],
         ranking = sample(length(ppl) - 1, length(ppl) - 1)
       )
       
